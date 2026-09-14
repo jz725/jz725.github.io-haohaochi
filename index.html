@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hao Hao Chi — Authentic Chinese Cuisine in Tupelo, MS</title>
+    <meta name="description" content="Hao Hao Chi serves authentic Chinese cooking in Tupelo, Mississippi. Fresh daily, family recipes, dine in or take out.">
+    <link rel="icon" href="./images/HHC5.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ===== Header ===== -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <img class="brand-logo" src="./images/HHC5.jpg" alt="">
+                <span class="brand-name">Hao Hao <span>Chi</span></span>
+            </a>
+
+            <nav class="site-nav" id="primary-nav" aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="cart-btn" type="button" aria-label="Open cart, empty" aria-expanded="false" aria-controls="cart-drawer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.2 14.6l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49L19.16 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.44c-.16.28-.25.61-.25.97 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.24-.11-.24-.24l.02-.09z"/>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ===== Hero ===== -->
+        <section class="hero">
+            <div class="hero-slides" aria-hidden="true">
+                <div class="hero-slide is-active" style="background-image:url('images/siurouMantou.jpg')"></div>
+                <div class="hero-slide" style="background-image:url('images/niurouMian.jpg')"></div>
+                <div class="hero-slide" style="background-image:url('images/tudouPlate.jpg')"></div>
+            </div>
+
+            <div class="container hero-content">
+                <p class="status-pill" data-open-status>
+                    <span class="dot"></span>
+                    <span class="status-text">Checking hours…</span>
+                </p>
+                <h1>Bringing authentic <em>Chinese cuisine</em> to all.</h1>
+                <p class="hero-lede">Experience the unique flavors of China, or simply feel at home. Every dish is cooked fresh to order.</p>
+                <p class="hero-tagline">Each bite will make you say <span>“Hao Hao Chi!”</span></p>
+
+                <div class="hero-actions">
+                    <a href="menu.html" class="btn btn--primary btn--lg">Order Now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    <a href="about.html" class="btn btn--ghost btn--lg">Our Story</a>
+                </div>
+
+                <div class="hero-meta">
+                    <div><i class="fa-solid fa-location-dot" aria-hidden="true"></i> 123 Main St, Tupelo MS</div>
+                    <div><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+15555550100" style="text-decoration:none">(555) 555-0100</a></div>
+                    <div><i class="fa-solid fa-clock" aria-hidden="true"></i> Mon–Fri, 9:00AM–8:00PM</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Why us ===== -->
+        <section class="section section--alt">
+            <div class="container">
+                <div class="value-grid">
+                    <article class="value-card" data-reveal>
+                        <div class="icon"><i class="fa-solid fa-leaf" aria-hidden="true"></i></div>
+                        <h3>Cooked fresh</h3>
+                        <p>Nothing sits under a heat lamp. Every plate is made when you order it.</p>
+                    </article>
+                    <article class="value-card" data-reveal>
+                        <div class="icon"><i class="fa-solid fa-book-open" aria-hidden="true"></i></div>
+                        <h3>Family recipes</h3>
+                        <p>Dishes Chef Zheng cooked at home long before there was a restaurant.</p>
+                    </article>
+                    <article class="value-card" data-reveal>
+                        <div class="icon"><i class="fa-solid fa-bowl-food" aria-hidden="true"></i></div>
+                        <h3>Quality and quantity</h3>
+                        <p>Generous portions, because no one should leave the table still hungry.</p>
+                    </article>
+                    <article class="value-card" data-reveal>
+                        <div class="icon"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i></div>
+                        <h3>Dine in or take out</h3>
+                        <p>Build your order online, then pick it up hot at the counter.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Guest favorites ===== -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="eyebrow">Guest favorites</span>
+                    <h2>The dishes people come back for</h2>
+                    <p>A taste of the full menu — add them straight to your order.</p>
+                </div>
+
+                <!-- Rendered from menu-data.js by web.js -->
+                <div class="dish-grid" id="featured-root">
+                    <p class="result-count">Loading favorites…</p>
+                </div>
+
+                <div class="hero-actions" style="justify-content:center;margin-top:var(--space-7)">
+                    <a href="menu.html" class="btn btn--ghost">See the full menu <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Story teaser ===== -->
+        <section class="section section--alt">
+            <div class="container story">
+                <div class="story-media" data-reveal>
+                    <img src="./images/restaurant-image.jpg" alt="Inside the Hao Hao Chi dining room" loading="lazy">
+                </div>
+                <div class="story-text" data-reveal>
+                    <span class="eyebrow">Since 2024</span>
+                    <h2>The House of Zheng</h2>
+                    <p>It started with a passion for cooking. Chef Zheng made creative dishes for his family, and the time he put into them was how he showed his love for the people around him.</p>
+                    <p>That passion grew, and on February 2nd, 2024, Hao Hao Chi opened its doors in Tupelo.</p>
+                    <a href="about.html" class="btn btn--ghost">Read our story</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Closing CTA ===== -->
+        <section class="cta-band">
+            <div class="container" data-reveal>
+                <span class="eyebrow">Hungry yet?</span>
+                <h2>Your table is ready</h2>
+                <p>Order ahead for pickup, or stop by 123 Main Street and let us take care of the rest.</p>
+                <div class="hero-actions">
+                    <a href="menu.html" class="btn btn--primary btn--lg">Start an order</a>
+                    <a href="contact.html" class="btn btn--ghost btn--lg">Find us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a class="footer-brand" href="index.html">
+                    <img src="./images/HHC5.jpg" alt="">
+                    <span>Hao Hao Chi</span>
+                </a>
+                <p>Authentic Chinese cooking in Tupelo, Mississippi. Made fresh, served warm.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Hao Hao Chi on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Hao Hao Chi on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Hao Hao Chi on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Find Us</h3>
+                <p>123 Main Street<br>Tupelo, Mississippi 38801</p>
+                <p><a href="tel:+15555550100">(555) 555-0100</a></p>
+                <ul class="hours-list" data-hours-list></ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; <span data-year>2024</span> Hao Hao Chi. All rights reserved.</p>
+            <p>Designed by <span class="designer">Jennie</span></p>
+        </div>
+    </footer>
+
+    <!-- ===== Cart drawer ===== -->
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Your order" aria-hidden="true">
+        <div class="cart-drawer-head">
+            <h2>Your Order</h2>
+            <button class="cart-close-btn" type="button" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart-body">
+            <div class="cart-empty">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.2 14.6l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49L19.16 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.44c-.16.28-.25.61-.25.97 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.24-.11-.24-.24l.02-.09z"/>
+                </svg>
+                <p>Your cart is empty.</p>
+                <a href="menu.html" class="btn btn--ghost">Browse the menu</a>
+            </div>
+            <ul class="cart-items"></ul>
+        </div>
+        <div class="cart-foot hidden">
+            <div class="cart-line"><span>Subtotal</span><span data-cart-subtotal>$0.00</span></div>
+            <div class="cart-line"><span>Estimated tax (7%)</span><span data-cart-tax>$0.00</span></div>
+            <div class="cart-line cart-line--total"><span>Total</span><span data-cart-total>$0.00</span></div>
+            <button class="btn btn--primary btn--block checkout-btn" type="button">Checkout</button>
+            <button class="cart-clear" type="button">Empty cart</button>
+            <p class="cart-note">Pickup only · pay when you collect</p>
+        </div>
+    </aside>
+
+    <div class="scrim"></div>
+
+    <script src="menu-data.js"></script>
+    <script src="web.js"></script>
+</body>
+</html>

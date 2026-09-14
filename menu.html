@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu — Hao Hao Chi</title>
+    <meta name="description" content="The full Hao Hao Chi menu: appetizers, entrees, vegetable dishes, soups and beverages. Search, filter and build your pickup order.">
+    <link rel="icon" href="./images/HHC5.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ===== Header ===== -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <img class="brand-logo" src="./images/HHC5.jpg" alt="">
+                <span class="brand-name">Hao Hao <span>Chi</span></span>
+            </a>
+
+            <nav class="site-nav" id="primary-nav" aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html" aria-current="page">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="cart-btn" type="button" aria-label="Open cart, empty" aria-expanded="false" aria-controls="cart-drawer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.2 14.6l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49L19.16 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.44c-.16.28-.25.61-.25.97 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.24-.11-.24-.24l.02-.09z"/>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ===== Page hero ===== -->
+        <section class="page-hero" style="background-image:url('images/top-view-asian-dumplings-with-chopsticks-copy-space.jpg')">
+            <div class="container">
+                <span class="eyebrow">Dine in · Take out</span>
+                <h1>The Full Menu</h1>
+                <p>Everything is cooked to order. Add what you like to your cart and pick it up hot.</p>
+            </div>
+        </section>
+
+        <!-- ===== Search & filters ===== -->
+        <div class="menu-toolbar">
+            <div class="container toolbar-inner">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                    <label class="visually-hidden" for="menu-search">Search the menu</label>
+                    <input type="search" id="menu-search" placeholder="Search dishes, e.g. tofu, soup, tea" autocomplete="off">
+                    <button class="search-clear hidden" type="button" aria-label="Clear search">
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="filter-chips" role="group" aria-label="Filter by category"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="result-count" id="result-count" role="status" aria-live="polite"></p>
+
+            <!-- Sections are rendered from menu-data.js by web.js -->
+            <div id="menu-root">
+                <p class="result-count">Loading the menu…</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a class="footer-brand" href="index.html">
+                    <img src="./images/HHC5.jpg" alt="">
+                    <span>Hao Hao Chi</span>
+                </a>
+                <p>Authentic Chinese cooking in Tupelo, Mississippi. Made fresh, served warm.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Hao Hao Chi on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Hao Hao Chi on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Hao Hao Chi on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Find Us</h3>
+                <p>123 Main Street<br>Tupelo, Mississippi 38801</p>
+                <p><a href="tel:+15555550100">(555) 555-0100</a></p>
+                <ul class="hours-list" data-hours-list></ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; <span data-year>2024</span> Hao Hao Chi. All rights reserved.</p>
+            <p>Designed by <span class="designer">Jennie</span></p>
+        </div>
+    </footer>
+
+    <!-- ===== Cart drawer ===== -->
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Your order" aria-hidden="true">
+        <div class="cart-drawer-head">
+            <h2>Your Order</h2>
+            <button class="cart-close-btn" type="button" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart-body">
+            <div class="cart-empty">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.2 14.6l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49L19.16 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.44c-.16.28-.25.61-.25.97 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.24-.11-.24-.24l.02-.09z"/>
+                </svg>
+                <p>Your cart is empty.</p>
+                <a href="#appetizers" class="btn btn--ghost">Browse the menu</a>
+            </div>
+            <ul class="cart-items"></ul>
+        </div>
+        <div class="cart-foot hidden">
+            <div class="cart-line"><span>Subtotal</span><span data-cart-subtotal>$0.00</span></div>
+            <div class="cart-line"><span>Estimated tax (7%)</span><span data-cart-tax>$0.00</span></div>
+            <div class="cart-line cart-line--total"><span>Total</span><span data-cart-total>$0.00</span></div>
+            <button class="btn btn--primary btn--block checkout-btn" type="button">Checkout</button>
+            <button class="cart-clear" type="button">Empty cart</button>
+            <p class="cart-note">Pickup only · pay when you collect</p>
+        </div>
+    </aside>
+
+    <div class="scrim"></div>
+
+    <script src="menu-data.js"></script>
+    <script src="web.js"></script>
+</body>
+</html>
